@@ -29,7 +29,7 @@ aws configure
 Run terraform :
 ```
 terraform init
-terraform.exe plan -var='s3_targets=[ "your_bucket_name", "another_bucket_to_analyze" ]' 
+terraform plan -var='s3_targets=[ "your_bucket_name", "another_bucket_to_analyze" ]' 
 ```
 ## Remote backend
 In order to use s3 backend to save your terraform state for concurrent users, edit and configure ![backend.tf](/backend.tf) file with your bucket configuration.
