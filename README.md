@@ -1,6 +1,7 @@
 # s3-bucket-antivirus
 ## Overview
-This terraform code implements the python solution using Claim Antivirus and the architecture designed by ![upsidetravel team](https://github.com/upsidetravel). Check their ![documentation](https://github.com/upsidetravel/bucket-antivirus-function/blob/master/README.md).
+This terraform code implements the python solution using Claim Antivirus and the architecture designed by ![upsidetravel team](https://github.com/upsidetravel). Check their ![documentation](https://github.com/upsidetravel/bucket-antivirus-function/blob/master/README.md)
+
 I just developed the Terraform code to deploy the antivirus scanning for s3 buckets automatically.
 
 ## Requirements
@@ -10,9 +11,9 @@ I just developed the Terraform code to deploy the antivirus scanning for s3 buck
 ## Variables
 | Variable | Description | Default | Required |
 | --- | --- | --- | --- |
-| s3_targets | A list of strings with the bucket names to be analized | --- | Yes |
+| s3_targets | A list of strings with the bucket names to be analized |  | Yes |
 | project | Something to identify your resources. Could be project or organization name | "claim antivirus" | No |
-| s3_bucket_av_definitions_name | The name of the bucket that will be created to save AntiVirus database and definitions. If the variable is not defined a random UUID will be used for the bucket name | <Random UUID> | No |
+| s3_bucket_av_definitions_name | The name of the bucket that will be created to save AntiVirus database and definitions. If the variable is not defined a random UUID will be used for the bucket name | Random UUID | No |
 | av_scan_name | The prefix name to identify the resources created to scan the s3 buckets (lambda functions and iam roles and policies ) | av-scan | No |
 | av_update_name | The prefix name to identify the resources created to update antivirus database (lambda functions and iam roles and policies ) | av-update | No |
 | av_update_trigger | Cloudwatch trigger format to run lambda update functions in order to keep Claim antivirus up-to-date | "cron(0 0 * * ? *)" | No |
