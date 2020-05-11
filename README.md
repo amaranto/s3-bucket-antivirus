@@ -1,6 +1,6 @@
 # s3-bucket-antivirus
 ## Overview
-This terraform code implements the python solution using Claim Antivirus and the architecture designed by ![upsidetravel team](https://github.com/upsidetravel). Check their ![documentation](https://github.com/upsidetravel/bucket-antivirus-function/blob/master/README.md)
+This terraform code implements a python solution using Claim Antivirus and the architecture designed by ![upsidetravel team](https://github.com/upsidetravel). Check their ![documentation](https://github.com/upsidetravel/bucket-antivirus-function/blob/master/README.md)
 
 I just developed the Terraform code to deploy the antivirus scanning for s3 buckets automatically.
 
